@@ -34,6 +34,7 @@ h6 {font-weight: bold;}
     #hamburguer { display: block; }
     #sidebarM {display: none;}
     #pn131, #dtpa1, #dtpa3, #novas-vacinas1 { width: 300px;}
+    #intro-img { width: 300px; height: 200px;} 
 }
 
 @media screen and (min-width: 501px)  {
