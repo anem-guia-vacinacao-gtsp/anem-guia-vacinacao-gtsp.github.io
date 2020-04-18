@@ -11,7 +11,7 @@ var nonClickedStyle = "w3-bar-item w3-button tablink w3-hover-none w3-border-bla
 var d = new Date();
 var year = d.getFullYear();
 var msg = "© " + year + " Associação Nacional de Estudantes de Medicina";
-document.getElementById("info").innerHTML = msg;
+document.getElementById("info").innerHTML = msg + "<br>Em parceria com: <a href = 'http://www.metis.med.up.pt/index.php/P%C3%A1gina_principal'>METIS</a> ";
 openTopic(event, "home");
 
 
