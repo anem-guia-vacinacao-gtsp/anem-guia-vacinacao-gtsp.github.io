@@ -1,1 +1,1402 @@
-<h1>Site under maintenance</h1>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/w3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/site.css">
+    <link rel="icon" href="./css/images/anem-logo-tab.jpg">
+    <title>Guia de Vacinação | ANEM</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+
+
+    <div id="desktopPage">
+
+        <div id="sidebarM" class="w3-sidebar w3-bar-block w3-colapse w3-black w3-animate-left">
+            <img id="anem-menu" src="./css/images/logo-anem-amarelo.png" alt="ANEM-menu" height="75" width="90">
+
+            <button id="home-tab" class="w3-bar-item w3-button tablink" onclick="openTopic(event, 'home', 'true')"><i
+                    class="fa fa-home"></i>Introdução</button>
+
+            <button id="hepB-tab" class="w3-bar-item w3-button tablink " onclick="openTopic(event, 'hepB', 'true')"><i
+                    class="fas fa-syringe"></i> 1. VHB</button>
+
+            <button id="hib2-tab" class="w3-bar-item w3-button tablink" onclick="openTopic(event, 'hib2', 'true')"><i
+                    class="fas fa-syringe"></i> 2. Hib</button>
+
+            <button id="dtpa-tab" class="w3-bar-item w3-button tablink" onclick="openTopic(event, 'dtpa', 'true')"><i
+                    class="fas fa-syringe"></i> 3. DTPa, VIP e Td</button>
+
+            <button id="vaspr-tab" class="w3-bar-item w3-button tablink" onclick="openTopic(event, 'vaspr', 'true')"><i
+                    class="fas fa-syringe"></i> 4. VASPR</button>
+
+            <button id="meuc-tab" class="w3-bar-item w3-button tablink " onclick="openTopic(event, 'meuc', 'true')"><i
+                    class="fas fa-syringe"></i> 5. MenC</button>
+
+            <button id="pn13v-tab" class="w3-bar-item w3-button tablink" onclick="openTopic(event, 'pn13v', 'true')"><i
+                    class="fas fa-syringe"></i> 6. Pn13</button>
+
+            <button id="hpv-tab" class="w3-bar-item w3-button tablink" onclick="openTopic(event, 'hpv', 'true')"><i
+                    class="fas fa-syringe"></i> 7. HPV</button>
+
+            <button id="novasVacinas-tab" class="w3-bar-item w3-button tablink"
+                onclick="openTopic(event, 'novasVacinas', 'true')"><i class="fas fa-syringe"></i> 8. Novas
+                Vacinas</button>
+
+            <button id="bcg-tab" class="w3-bar-item w3-button tablink" onclick="openTopic(event, 'bcg', 'true')"><i
+                    class="fas fa-syringe"></i> 9. BCG</button>
+
+            <button id="gripe-tab" class="w3-bar-item w3-button tablink" onclick="openTopic(event, 'gripe', 'true')"><i
+                    class="fas fa-syringe"></i> 10.
+                Outras</button>
+        </div>
+        <button id="hamburguer" class="w3-button w3-lightgrey w3-xlarge w3-hover-none"
+            onclick="myFunction(this)">&#9776;</button>
+
+        <div id="sidebar" class="w3-sidebar w3-bar-block w3-border-right">
+            <br><br><br>
+
+            <span class="w3-display-topmiddle w3-large">
+                <a href="http://anem.pt">
+                    <img class="header-image" src="./css/images/logo-anem.png" alt="ANEM logo" height="60" width="134">
+                </a>
+            </span>
+            <br><br>
+
+            <div id="divMenu"></div>
+            <button id="home-tab"
+                class="w3-bar-item w3-button tablink w3-hover-none w3-border-black w3-bottombar w3-hover-border-yellow w3-hover-text-yellow"
+                onclick="openTopic(event, 'home')"><i class="fa fa-home"></i>Introdução</button>
+
+            <button id="hepB-tab"
+                class="w3-bar-item w3-button tablink w3-hover-none w3-border-black w3-bottombar w3-hover-border-yellow w3-hover-text-yellow"
+                onclick="openTopic(event, 'hepB')"><i class="fas fa-syringe"></i> 1. VHB</button>
+
+            <button id="hib2-tab"
+                class="w3-bar-item w3-button tablink w3-hover-none w3-border-black w3-bottombar w3-hover-border-yellow w3-hover-text-yellow"
+                onclick="openTopic(event, 'hib2')"><i class="fas fa-syringe"></i> 2. Hib</button>
+
+            <button id="dtpa-tab"
+                class="w3-bar-item w3-button tablink w3-hover-none w3-border-black w3-bottombar w3-hover-border-yellow w3-hover-text-yellow"
+                onclick="openTopic(event, 'dtpa')"><i class="fas fa-syringe"></i> 3. DTPa, VIP e Td</button>
+
+            <button id="vaspr-tab"
+                class="w3-bar-item w3-button tablink w3-hover-none w3-border-black w3-bottombar w3-hover-border-yellow w3-hover-text-yellow"
+                onclick="openTopic(event, 'vaspr')"><i class="fas fa-syringe"></i> 4. VASPR</button>
+
+
+            <button id="meuc-tab"
+                class="w3-bar-item w3-button tablink w3-hover-none w3-border-black w3-bottombar w3-hover-border-yellow w3-hover-text-yellow"
+                onclick="openTopic(event, 'meuc')"><i class="fas fa-syringe"></i> 5. MenC</button>
+
+            <button id="pn13v-tab"
+                class="w3-bar-item w3-button tablink w3-hover-none w3-border-black w3-bottombar w3-hover-border-yellow w3-hover-text-yellow"
+                onclick="openTopic(event, 'pn13v')"><i class="fas fa-syringe"></i> 6. Pn13</button>
+
+            <button id="hpv-tab"
+                class="w3-bar-item w3-button tablink w3-hover-none w3-border-black w3-bottombar w3-hover-border-yellow w3-hover-text-yellow"
+                onclick="openTopic(event, 'hpv')"><i class="fas fa-syringe"></i> 7. HPV</button>
+
+            <button id="novasVacinas-tab"
+                class="w3-bar-item w3-button tablink w3-hover-none w3-border-black w3-bottombar w3-hover-border-yellow w3-hover-text-yellow"
+                onclick="openTopic(event, 'novasVacinas')"><i class="fas fa-syringe"></i> 8. Novas Vacinas</button>
+
+            <button id="bcg-tab"
+                class="w3-bar-item w3-button tablink w3-hover-none w3-border-black w3-bottombar w3-hover-border-yellow w3-hover-text-yellow"
+                onclick="openTopic(event, 'bcg')"><i class="fas fa-syringe"></i> 9. BCG</button>
+
+            <button id="gripe-tab"
+                class="w3-bar-item w3-button tablink w3-hover-none w3-border-black w3-bottombar w3-hover-border-yellow w3-hover-text-yellow"
+                onclick="openTopic(event, 'gripe')"><i class="fas fa-syringe"></i> 10.
+                Outras</button>
+
+        </div>
+
+        <div class="w3-overlay w3-animate-opacity" style="cursor:pointer" id="pageOverlay"
+            onclick="closeFunction(this)">
+        </div>
+
+
+        <div id="content">
+            <div id="home" class="w3-container topic w3-mobile w3-animate-opacity w3-mobile">
+                <h1>Guia de Vacinação</h1>
+                <br>
+                <br>
+                <img src="./css/images/needle.png" class="center" alt="needle" height="300px" width="300px">
+                <br>
+                <h5>Introdução</h5>
+                <p>As vacinas são produtos imunobiológicos constituídos por microrganismos, partes destes ou produtos
+                    derivados, que depois de inoculados no indivíduo saudável produzem uma resposta similar à da
+                    infecção natural induzindo imunidade sem risco para o vacinado.
+                    <br>
+                    <br>Além da proteção individual, a maioria das vacinas tem ainda a capacidade de, a partir de
+                    determinadas taxas de cobertura vacinal, interromper a circulação dos microrganismos entre pessoas
+                    originando aquilo a que se chama “imunidade de grupo”. Este benefício para a sociedade é claramente
+                    uma mais-valia da vacinação em massa.
+                </p>
+                <br>
+                <h5>O programa nacional de vacinação</h5>
+                <p>O Programa Nacional de Vacinação é aplicado através de um Esquema Vacinal Recomendado a toda a
+                    população presente em Portugal, de acordo com a idade.
+                    <br>
+                    <br> O esquema vacinal recomendado tem como objetivo obter a melhor proteção, na idade mais adequada
+                    e o mais precocemente possível. </p>
+                <br>
+                <a href="https://www.dgs.pt/ficheiros-de-upload-2013/pnv-esquema-recomendado-pdf11.aspx"><img
+                        src="./css/images/intro1.png" class="center" alt="needle" height="400px" width="600px"></a>
+
+                <br>
+                <p>O Programa Nacional de Vacinação (PNV) passará a incluir a partir de <u>1 de outubro de 2020</u>:</p>
+                <ul>
+                    <li>A <u><b>vacina meningocócica B (MEN B)</u></b> para todas as crianças, no primeiro ano de vida;
+                    </li>
+                    <li>A <u><b>vacina HPV para todos os rapazes</u></b>, aos dez anos;</li>
+                    <li>A <u><b>vacina contra o Rotavírus (vacina ROTA) para grupos de risco</u></b>.</li>
+                </ul>
+                <p>As outras vacinas que integram o PNV vão continuar a ser administradas no mesmo esquema.
+                    <br><br> Além das vacinas abordadas no PNV, incluindo as novas inclusões, iremos também descrever
+                    vacinas extra-plano nomeadamente a vacina contra o vírus Gripe e a vacina contra o vírus da hepatite
+                    A.
+                    <br><br> As recomendações da Direção-Geral da Saúde em matéria de vacinação são fundamentadas em
+                    pareceres da Comissão Técnica de Vacinação que continuamente avalia e propõe alterações ao Programa
+                    Nacional de Vacinação, baseadas em critérios epidemiológicos, nas características das vacinas
+                    disponíveis, em estudos e evidência científica e em avaliações económicas, nomeadamente de
+                    custo-efetividade.
+                </p>
+            </div>
+
+            <div id="hepB" class="w3-container topic w3-mobile w3-animate-opacity w3-mobile">
+                <h2>1. VHB</h2>
+                <br>
+                <h5>VHB - Vacina contra a Hepatite B</h5>
+                <br>
+                <h6>O que é?</h6>
+                <p>Vacina de antigénio de superfície recombinante do vírus da hepatite B.</p>
+                <br>
+                <h6>Para que serve?</h6>
+                <p>Prevenção de infeção por vírus da hepatite B.
+                    <br> A hepatite B é uma inflamação do fígado que pode ser aguda e/ou crónica. Em cerca de 5% dos
+                    casos, a hepatite B em adultos torna-se crónica, podendo provocar cirrose hepática e cancro do
+                    fígado.
+                    <br> A maioria das pessoas infetadas pelo vírus da hepatite B (VHB) não desenvolve qualquer sintoma
+                    na fase inicial/aguda da infeção, sobretudo quando ocorre durante a infância. A inexistência de
+                    sintomas não é sinónimo de controlo da infeção.
+                    <br>
+                    <br><u>Sintomas de infeção aguda:</u>
+                </p>
+                <ul>
+                    <li>Febre</li>
+                    <li>Dor abdominal</li>
+                    <li>Cansaço</li>
+                    <li>Diminuição do apetite</li>
+                    <li>Náuseas</li>
+                    <li>Icterícia (coloração amarelada da pele e dos olhos)</li>
+                    <li>Urina escura</li>
+                </ul>
+                <br>
+                <p>Nos casos mais graves, pode ocorrer insuficiência hepática (falência do funcionamento do fígado),
+                    caracterizada por icterícia, acumulação de líquidos e confusão mental.
+                    <br> As vias de transmissão mais frequentes são:
+                    <br>
+                    <ul>
+                        <li>Via sexual (forma mais comum de transmissão na Europa Ocidental). Ter múltiplos parceiros
+                            sexuais e não utilizar preservativo são fatores que aumentam significativamente o risco.
+                        </li>
+                        <li>Via parentérica:</li>
+                        <ul>
+                            <li>Partilha de agulhas/seringas contaminadas, tatuagens, acupuntura, piercings (se
+                                utilizado material não esterilizado)</li>
+                            <li>Partilha de escova dos dentes, lâminas de barbear ou outros utensílios de uso pessoal
+                                que possam conter sangue contaminado</li>
+                            <li>Transfusões sanguíneas e transplante de órgãos (vias raras de transmissão)</li>
+                        </ul>
+                        <li>Transmissão vertical (de mãe para filho), que acontece durante ou imediatamente após o
+                            parto. A cesariana não impede a transmissão do vírus.</li>
+                    </ul>
+                    <br> A vacinação é a forma mais efetiva de prevenir a doença, protegendo cerca de 95% a 99% das
+                    pessoas contra a Hepatite B. Esta vacina é essencial para reduzir a incidência e mortalidade por
+                    hepatite B, mantendo a doença controlada, uma vez que o vírus circula na comunidade, através de
+                    portadores crónicos. Também é recomendada nas viagens para países onde a doença é endémica (região
+                    do Pacífico ocidental e África subsariana).
+                </p>
+                <br>
+                <h6>Quando deverá ser administrada?</h6>
+                <p>A vacinação está dividida em 3 doses, sendo que é dada a vacina contra a hepatite B (VHB) logo após o
+                    nascimento, aos 2 e aos 6 meses de idade.
+                    <br>Vacinas:
+                    <ul>
+                        <li>
+                            VHB – nascimento
+                        </li>
+                        <li>DTPaHibVIPVHB - Hexavalente - 2 e 6 meses de idade</li>
+                    </ul>
+                    <br>Se não tiver feito no tempo indicado, pode ser iniciada até aos 18 anos e completada nas 3 doses
+                </p>
+                <br>
+                <h6>Efeitos adversos?</h6>
+                <p>Os efeitos adversos mais comuns são dor, vermelhidão e tumefação ligeira no local da injeção; febre
+                    moderada, com duração de um ou dois dias, mal-estar e fadiga. A vacina tem-se revelado segura, não
+                    havendo prova que possa provocar reações secundárias graves.
+                    <br> As reacções alérgicas são muito raras.
+                </p>
+                <br>
+                <h6>Imunidade de Grupo?</h6>
+                <p>Outra razão importante para vacinar é a existência de imunidade de grupo, que protege os que não
+                    podem ser vacinados ou não respondem à vacinação.</p>
+                <br>
+                <p style="font-size: 11px;">
+                    Bibliografia:
+                    <br>
+                    <a class="links"
+                        href="https://www.dgs.pt/documentos-e-publicacoes/programa-nacional-de-vacinacao-2017-pdf.aspx">https://www.dgs.pt/documentos-e-publicacoes/programa-nacional-de-vacinacao-2017-pdf.aspx</a>
+                    <br>
+                    <a class="links"
+                        href="https://www.sns24.gov.pt/tema/doencas-infecciosas/vhb/#sec-1">https://www.sns24.gov.pt/tema/doencas-infecciosas/vhb/#sec-1</a>
+                    <br>
+                    <a class="links"
+                        href="https://www.dgs.pt/paginas-de-sistema/saude-de-a-a-z/programa-nacional-de-vacinacao/vacinas-do-pnv/hepatite-b.aspx">https://www.dgs.pt/paginas-de-sistema/saude-de-a-a-z/programa-nacional-de-vacinacao/vacinas-do-pnv/hepatite-b.aspx</a>
+                    <br>
+                </p>
+            </div>
+
+            <div id="hib2" class="w3-container topic w3-animate-opacity w3-mobile">
+                <h2>2. Hib</h2>
+                <br>
+                <h5>Hib - Vacina contra doença invasiva por <i>Haemophilus influenzae b</i></h5>
+                <br>
+                <h6>O que é?</h6>
+                <p>Vacina de polissacárido capsular de <i>Haemophilus influenzae</i> do serotipo b, conjugado com
+                    proteína tetânica. Trata-se de uma vacina inativa conjugada.</p>
+                <br>
+                <h6>Para que serve?</h6>
+                <p>Protege contra infeções provocadas pela bactéria <i>Haemophilus influenzae</i> do serotipo b, que
+                    afeta sobretudo crianças com menos de 5 anos.</p>
+                <br>
+                <h6>O que é a doença?</h6>
+                <p>Esta bactéria coloniza por norma a nasofaringe e é transmitida através de gotículas de saliva, quando
+                    o doente tosse ou espirra.
+                    <br> A vacina é essencial para manter a doença controlada nas crianças, uma vez que a bactéria
+                    circula na comunidade através de portadores assintomáticos.
+                    <br> A bactéria pode causar doenças graves, como pneumonia, infeções na pele ou ossos e meningite.
+                    Esta última tem uma taxa de letalidade elevada (5% a 10%), pelo que merece particular atenção, tendo
+                    em conta também possíveis sequelas permanentes decorrentes da infeção, como a surdez, cegueira e
+                    atraso mental.
+                    <br> A OMS estima que 2% da mortalidade infantil abaixo dos 5 anos de idade durante o ano de 2008
+                    tenha sido causada por infeções de Hib.
+                </p>
+                <br>
+                <h6>Quando deverá ser administrada?</h6>
+                <ul>
+                    <il>Aos 2 meses de idade;</il>
+                    <ul>
+                        <li>1ª dose vacina hexavalente DTPaHibVIPVHB;</li>
+                        <ul>
+                            <li>[Difteria + Tétano + Tosse convulsa] (DTPa) + Doença invasiva por Haemophilus influenzae
+                                b (Hib) + poliomielite (VIP) + 2ª dose de VHB.</li>
+                        </ul>
+                    </ul>
+                    <il>Aos 4 meses de idade;</il>
+                    <ul>
+                        <li>2ª dose vacina pentavalente DTPaHibVIP;</li>
+                        <ul>
+                            <li>[Difteria + Tétano + Tosse Convulsa] (DTPa) + Doença invasiva por Hib + Poliomielite
+                                (VIP).
+                            </li>
+                        </ul>
+                    </ul>
+                    <il>Aos 6 meses de idade;</il>
+                    <ul>
+                        <li>3ª dose vacina hexavavalente DTPaHibVIPVHB;</li>
+                    </ul>
+                    <il>Aos 18 meses de idade;</il>
+                    <ul>
+                        <li>1º reforço vacina pentavalente DTPaHibVIP.</li>
+                    </ul>
+                </ul>
+                <br> De referir que a vacina Hib faz parte do conjunto de vacinas que podem ser administradas
+                separadamente (existe uma formulação monovalente) ou em combinações diferentes das referidas. A idade
+                máxima para completar o esquema vacinal é até aos 5 anos, uma vez que as infeções são raras após esta
+                idade.
+                <br>
+                <br>
+                <h6>Efeitos adversos (relativamente às formulações hexa e pentavalentes)?</h6>
+                <p>As reações locais mais frequentes correspondem a dor, rubor e tumefação, 1 a 3 dias após a
+                    administração da vacina. Ocasionalmente pode aparecer um nódulo indolor no local da injeção que,
+                    geralmente, é reabsorvido lentamente ao longo de várias semanas.
+                    <br> Reações sistémicas mais frequentes (principalmente nas primeiras 24 horas): febre (≥38ºC),
+                    choro persistente (durante ≥1 hora).</p>
+                <br>
+                <h6>Imunidade de Grupo?</h6>
+                <p>Sim. A imunidade de grupo é importante para proteger também os que não podem ser vacinados ou não
+                    respondem à vacinação. Esta é a forma mais efetiva de prevenir a doença (cerca de 95% a 99% das
+                    pessoas, desenvolvem anticorpos protetores, após a primovacinação).</p>
+                <br>
+                <p style="font-size: 11px;">
+                    Bibliografia:
+                    <br>
+                    <p style="font-size: 11px;">World Health Organization. WHO | Estimated Hib and pneumococcal deaths
+                        for children under 5 years of age, 2008. who.int.
+                        <br><a class="links"
+                            href="https://www.who.int/immunization/monitoring_surveillance/burden/estimates/Pneumo_hib/en/. Published 1 de Dezembro de 2013. Acedido Abril 11, 2020.">https://www.who.int/immunization/monitoring_surveillance/burden/estimates/Pneumo_hib/en/</a>.
+                        <br>Published 1 de Dezembro de 2013. Acedido Abril 11, 2020.</p>
+                    <p style="font-size: 11px;">Leça A, Sarmento AM, Freitas G, et al. Norma no 016/2016, de 16/12/2016
+                        - Programa Nacional de Vacinação 2017. Lisboa; 2017.
+                        <br><a class="links"
+                            href="https://www.dgs.pt/directrizes-da-dgs/normas-e-circulares-normativas/norma-n-0162016-de-16122016-pdf.aspx.">https://www.dgs.pt/directrizes-da-dgs/normas-e-circulares-normativas/norma-n-0162016-de-16122016-pdf.aspx</a>.
+                    </p>
+                    <p style="font-size: 11px;">Direção-Geral da Saúde. Doença invasiva por Haemophilus influenzae b.
+                        dgs.pt
+                        <br><a class="links"
+                            href="https://www.dgs.pt/directrizes-da-dgs/normas-e-circulares-normativas/norma-n-0162016-de-16122016-pdf.aspx.">https://www.dgs.pt/directrizes-da-dgs/normas-e-circulares-normativas/norma-n-0162016-de-16122016-pdf.aspx</a>.
+                    </p>
+                    <p style="font-size: 11px;">Direção-Geral da Saúde. Programa Nacional de Vacinação: Perguntas e
+                        Respostas. dgs.pt.
+                        <br><a class="links"
+                            href="https://www.dgs.pt/paginas-de-sistema/saude-de-a-a-z/programa-nacional-de-vacinacao/perguntas-e-respostas.aspx">https://www.dgs.pt/paginas-de-sistema/saude-de-a-a-z/programa-nacional-de-vacinacao/perguntas-e-respostas.aspx</a>.
+                        <br>Published 2020. Acedido Abril 11, 2020.</p>
+                    <p style="font-size: 11px;">World Health Organization. WHO | Haemophilus influenzae type b (Hib).
+                        who.int.
+                        <br><a class="links"
+                            href="https://www.who.int/biologicals/areas/vaccines/haemophilus/haemophilus_influenzae_typeb_Hib/en/">https://www.who.int/biologicals/areas/vaccines/haemophilus/haemophilus_influenzae_typeb_Hib/en/</a>.
+                        <br>Published 14 de Novembro de 2011. Acedido Abril 11, 2020.</p>
+                </p>
+            </div>
+
+            <div id="dtpa" class="w3-container topic w3-animate-opacity w3-mobile">
+                <h2>3. DTPa, VIP e Td</h2>
+                <br>
+                <h5>DTPa - Vacina contra difteria, tétano e tosse convulsa</h5>
+                <br>
+                <h6>O que é?</h6>
+                <p>A Vacina DTPa é a Vacina combinada trivalente, que contém o toxóide diftérico (D), o toxóide tetânico
+                    (T) e o toxóide e subunidades de Bordetella pertussis (Pa). Administração Intramuscular.
+                </p>
+                <h6>Para que serve?</h6>
+                <p>Prevenção contra a Difteria, o Tétano e a Tosse Convulsa/<i>Pertussis.</i></p>
+                <br>
+                <h6>O que é o Tétano?</h6>
+                <p>O Tétano é uma infeção bacteriana grave caracterizada por espasmos musculares.</p>
+                <br>
+                <img src="./css/images/dtpa1.png" id="dtpa1" class="center" alt="dtpa1" height="250px" width="400px">
+                <br>
+                <h6>O que é a Difteria</h6>
+                <p>A Difteria é uma infeção causada pela bactéria Corynebacterium diphtheriae.
+                    <br><u>Sintomas:</u></p>
+                <ul>
+                    <li>Febre ligeira;</li>
+                    <li>Dor de garganta;</li>
+                    <li>Inflamação na garganta, que pode evoluir para uma membrana característica branca ou cinzenta.
+                    </li>
+                </ul>
+                <br>
+                <img src="./css/images/dtpa2.png" class="center" alt="dtpa2" height="400px" width="250px">
+                <br>
+                <p>As complicações mais graves incluem:</p>
+                <ul>
+                    <li>Obstrução da via aérea (pela formação de membrana na garganta)</li>
+                    <li>Falência cardíaca e renal</li>
+                    <li>Paralisia dos músculos da deglutição (ato de engolir)</li>
+                    <li>Pneumonia</li>
+                </ul>
+                <br>
+                <h6>O que é a Tosse convulsa?</h6>
+                <p>A Tosse Convulsa, também denominada como pertússis, é uma doença infecciosa aguda, causada pela
+                    bactéria Bordetella Pertussis, que compromete a traqueia e brônquios.
+                    <br>Possui 3 fases:
+                </p>
+                <ul>
+                    <li><u>Catarral</u> (1-2 semanas):
+                        <ul>
+                            <li>Inflamação</li>
+                            <li>Corrimento nasal</li>
+                            <li>Tosse seca</li>
+                            <li>Febre baixa.</li>
+                        </ul>
+                    </li>
+                    <li><u>Paroxística</u> (2-6 semanas):
+                        <ul>
+                            <li>Agravamento da tosse, podendo ser acompanhada de cianose (coloração azulada da pele e
+                                lábios) e inchaço da língua</li>
+                            <li>Ruído ao inspirar.</li>
+                            <li>Tosse pode provocar vómito, e é mais frequente de noite.</li>
+                        </ul>
+                    </li>
+                    <li><u>Convalescença</u> (2-6 semanas): Diminui progressivamente a tosse.</li>
+                </ul>
+                <br>
+                <h6>Quando deverá ser administrada?</h6>
+                <p>1ª dose - 2 meses
+                    <br> 2ª dose - 4 meses
+                    <br> 3ª dose - 6 meses
+                    <br> 4ª dose: 18 meses
+                    <br> 5ª dose: 5 anos
+                </p>
+                <p>Na 1ª e 3ª dose é administrada em vacina hexavalente ( com Hepatite B, Haemophilus Influenzae B -
+                    Hib, Poliomielite - VIP e DTPa).
+                    <br> Na 2ª e 4ª em vacina pentavalente (com Haemophilus Influenzae B - Hib, Poliomielite - VIP e
+                    DTPa).
+                    <br> A 5ª dose é trivalente com a DTPa.
+                </p>
+                <p>A limitação dos 6 anos de idade é devida à componente Pertussis uma vez que, a partir dos 7 anos de
+                    idade, aquela componente provoca muitas reações adversas.</p>
+                <br>
+                <h6>Efeitos adversos?</h6>
+                <p>Os mais frequentes são a dor, o vermelhão (rubor) e inchaço (edema) no local da injeção, que ocorrem
+                    1 a 3 dias após a administração da vacina. </p>
+                <p>
+                    Mais de metade das crianças desenvolvem febre poucas horas após a administração de DTPa, que
+                    desaparece, em regra, ao fim de um dia.
+                    <br> É de realçar que a febre que se inicia <u>mais de 24 horas</u> após a administração de DTPa não
+                    é considerada uma reação adversa à vacina.</p>
+                <br>
+                <h6>Imunidade de Grupo?</h6>
+                <p>Difteria - Sim (Doença eliminada)
+                    <br>Tétano e Tosse Convulsa - Não</p>
+                <br>
+                <h6>Curiosidade</h6>
+                <p>A vacina DTPa (acelular) foi introduzida no PNV em 2006, por substituição da vacina DTPw (de célula
+                    completa), que integrava o PNV desde a sua criação em 1965. A DTPa apresenta a mesma eficácia que a
+                    DTPw, mas apresenta menos reações adversas.</p>
+                <br>
+                <div id="divPage"></div>
+                <br>
+                <h5>VIP - Vacina contra Poliomielite</h5>
+                <br>
+                <br>
+                <h6>O que é?</h6>
+                <p>A VIP (Vacina contra a Poliomielite Inativada) é uma vacina que protege contra o vírus da
+                    Poliomielite.
+                    <br>Trata-se de uma vacina inativada, constituída por três tipos de vírus da poliomielite (tipo 1,
+                    tipo 2 e tipo 3).
+                    <br>Administração Intramuscular (ou subcutânea).
+                </p>
+                <br>
+                <h6>Para que serve?</h6>
+                <p>Serve para prevenir a Poliomielite.</p>
+                <br>
+                <h6>O que é a poliomielite</h6>
+                <p>A poliomielite, também conhecida por paralisia infantil, é uma doença infecciosa viral aguda
+                    transmitida de pessoa a pessoa, principalmente pela via fecal-oral, que pode levar a paralisia
+                    muscular.
+                </p>
+                <br>
+                <img src="./css/images/dtpa3.jpg" id="dtpa3" class="center" alt="dtpa3" height="250px" width="400px">
+                <br>
+                <h6>Quando deverá ser administrada?</h6>
+                <p>1ª dose - 2 meses
+                    <br> 2ª dose - 4 meses
+                    <br> 3ª dose - 6 meses
+                    <br> 4ª dose: 18 meses
+                    <br> 5ª dose: 5 anos
+                </p>
+                <p>A 1ª e 3ª doses são Vacinas Hexavalentes (com Hepatite B, Haemophilus Influenzae B, Poliomielite e
+                    DTPa).
+                    <br>A 2ª e 4ª são pentavalentes (com Haemophilus Influenzae B - Hib, Poliomielite - VIP e DTPa).
+                    <br>A 5ª dose é tetravalente (com VIP e DTPa).
+                </p>
+                <div id="divPage"></div>
+                <br>
+                <h5>Td - Vacina anti-tetânica</h5>
+                <br>
+                <h6>O que é?</h6>
+                <p>A vacina Td é uma vacina combinada bivalente contra o tétano e a difteria, constituída pelo toxóide
+                    tetânico e pelo toxóide diftérico. Administração Intramuscular (ou subcutânea).
+                </p>
+                <br>
+                <h6>Para que serve?</h6>
+                <p>Proteção contra o tétano e difteria (descritos na DTPa).</p>
+                <br>
+                <h6>Quando deverá ser administrada?</h6>
+                <p>1º reforço - 10 anos
+                    <br>2º reforço - 25 anos
+                    <br>3º reforço - 45 anos
+                    <br>4º reforço - 65 anos
+                    <br>A partir dos 65 anos é recomendado a administração da vacina Td de 10 em 10 anos.
+                </p>
+                <p>A 1ª e 3ª doses são Vacinas Hexavalentes (com Hepatite B, Haemophilus Influenzae B, Poliomielite e
+                    DTPa).
+                    <br>A 2ª e 4ª são pentavalentes (com Haemophilus Influenzae B - Hib, Poliomielite - VIP e DTPa).
+                    <br>A 5ª dose é tetravalente (com VIP e DTPa).
+                </p>
+                <p>Depois da primovacinação (nas 5 doses da vacina DTPa) e dos reforços, praticamente todos os
+                    indivíduos desenvolvem níveis protetores de antitoxina que vão diminuindo com o tempo. Embora
+                    algumas pessoas possam estar protegidas para toda a vida, decorridos alguns anos após a última dose
+                    administrada, o nível de antitoxina é geralmente inferior ao considerado protetor, pelo que se
+                    recomenda a administração de alguns reforços ao longo de toda a vida. </p>
+                <p>A vacina Td é também utilizada no âmbito do PNV para a vacinação de grávidas não vacinadas contra o
+                    tétano, para prevenir o tétano neonatal e do puerpério. É ainda utilizada na profilaxia do tétano na
+                    presença de ferimentos.</p>
+                <br>
+                <h6>Efeitos adversos?</h6>
+                <p>Os mais frequentes são a dor, eritema ou rubor e edema no local da injeção que ocorrem 1 a 3 dias
+                    após a administração da vacina. Frequentemente forma-se um nódulo duro e doloroso, no local da
+                    injeção, persistindo por algumas semanas. </p>
+                <br>
+                <h6>Imunidade de Grupo?</h6>
+                <p>Difteria - Sim (Doença eliminada)
+                    <br>Tétano - Não</p>
+                <br>
+                <p style="font-size: 11px;">
+                    Bibliografia:
+                    <br>
+                    <a class="links"
+                        href="https://www.dgs.pt/ficheiros-de-upload-3/pnv-vacinas-do-pnv-pdf.aspx">https://www.dgs.pt/ficheiros-de-upload-3/pnv-vacinas-do-pnv-pdf.aspx</a>
+                    <br>
+                    <a class="links"
+                        href="https://www.dgs.pt/documentos-e-publicacoes/programa-nacional-de-vacinacao-2017-pdf.aspx ">https://www.dgs.pt/documentos-e-publicacoes/programa-nacional-de-vacinacao-2017-pdf.aspx
+                    </a>
+                </p>
+            </div>
+
+            <div id="vaspr" class="w3-container topic w3-animate-opacity w3-mobile">
+                <h2>4. VASPR</h2>
+                <br>
+                <h5>VASPR - Vacina contra o sarampo, parotidite epidémica e rubéola</h5>
+                <br>
+                <br>
+                <h6>O que é?</h6>
+                <p>A VASPR é uma vacina combinada que protege contra o Sarampo, a Parotidite epidémica e a Rubéola.
+                    <br> É uma vacina trivalente vírica constituída por vírus vivos e atenuados do sarampo, da
+                    parotidite epidémica e da rubéola. Administração Subcutânea.
+                </p>
+                <br>
+                <h6>Para que serve?</h6>
+                <p>Confere proteção contra o Sarampo, a Parotidite epidémica e a Rubéola.
+                </p>
+                <br>
+                <h6><u>Sarampo</u></h6>
+                <p>O Sarampo (Measles morbillivirus) é uma infeção provocada por um vírus.
+                </p>
+                <p><u>Sintomas/Sinais</u></p>
+                <ul>
+                    <li>Febre</li>
+                    <li>Tosse</li>
+                    <li>Conjuntivite</li>
+                    <li>Corrimento nasal</li>
+                    <li>Manchas vermelhas na pele, com início na face, que se propagam para o tronco e membros</li>
+                    <li>Sinais de koplik (pequenos pontos brancos (máculas), com halo eritematoso difuso, que aparecem
+                        na mucosa bucal)</li>
+                </ul>
+                <br>
+                <img src="./css/images/vaspr1.jpg" class="center" alt="vaspr1" height="200px" width="300px">
+                <p>Transmite-se por contacto direto com gotículas infecciosas ou por propagação no ar quando a pessoa
+                    infetada tosse ou espirra. </p>
+                <p>Habitualmente a doença é benigna, mas, em alguns casos, pode ser grave ou levar à morte.
+                    <br> Em casos raros pode levar a panencefalite esclerosante sub-aguda, que surge meses a anos após a
+                    infeção por sarampo, culminando na morte do doente.
+                </p>
+                <br>
+                <h6><u>Parotidite epidémica</u></h6>
+                <p>A parotidite epidémica, conhecida vulgarmente como papeira, é uma doença viral causada pelo vírus da
+                    parotidite.
+                    <br><br><u>Sintomas/Sinais:</u>
+                </p>
+                <ul>
+                    <li>Febre</li>
+                    <li>Dores musculares</li>
+                    <li>Dores de cabeça</li>
+                    <li>Cansaço</li>
+                </ul>
+                <br>
+                <img src="./css/images/vaspr2.jpg" class="center" alt="vaspr2" height="200px" width="300px">
+                <br>
+                <h6><u>Rubéola</u></h6>
+                <p>A rubéola é uma doença transmissível, causada pelo vírus da rubéola, sendo caracterizada por erupções
+                    vermelhas na pele. É uma infeção viral contagiosa.
+                    <br>A vacinação é especialmente importante nas mulheres em idade fértil, uma vez que a infeção por
+                    rubéola durante a gravidez pode estar associada a malformações graves do feto.
+                </p>
+                <br>
+                <img src="./css/images/vaspr3.jpg" class="center" alt="vaspr3" height="300px" width="200px">
+                <br>
+                <h6>Quando deverá ser administrada?</h6>
+                <p>1ª dose (VASPR 1) - 12 meses
+                    <br> 2ª dose (VASPR 2) - 5 anos
+                    <br> Excecionalmente, a vacina pode ser administrada a partir dos 6 meses de idade, mantendo-se,
+                    neste caso, a necessidade de administrar 2 doses posteriormente, nas idades recomendadas (VASPR1 e
+                    VASPR2).
+                </p>
+                <br>
+                <h6>Efeitos adversos</h6>
+                <p>Os mais frequentes são ardor, calor e/ou dor de curta duração, rubor ou edema no local da inoculação.
+                    <br> Pode também surgir febre (> 39,4ºC) e/ou exantema (rash), situações que são auto-limitadas, de
+                    curta duração e que podem surgir 5 a 12 dias após a vacinação, cedendo bem aos antipiréticos nas
+                    doses indicadas para a idade e peso.
+                </p>
+
+                <br>
+                <h6>Quais as Contraindicações? </h6>
+                <p>
+                    <ul>
+                        <li>Reação anafilática a uma dose anterior da vacina, à neomicina, à gelatina ou a outros
+                            componentes da vacina</li>
+                        <li>Gravidez</li>
+                        <li>Tuberculose ativa</li>
+                        <li>Trombocitopenia ou púrpura trombocitopénica na sequência de uma dose anterior da vacina</li>
+                        <li>Imunodepressão grave, congénita ou adquirida devido a terapêutica imunossupressora</li>
+                    </ul>
+                    <br>Estas contraindicações são devidas ao facto de se tratar de uma vacina constituída por vírus
+                    vivos e atenuados.
+                </p>
+                <br>
+                <h6>Imunidade de Grupo?</h6>
+                <p>Sim.</p>
+                <br>
+                <p style="font-size: 11px;">
+                    Bibliografia:
+                    <br>
+                    <a class="links"
+                        href="https://www.dgs.pt/ficheiros-de-upload-3/pnv-vacinas-do-pnv-pdf.aspx">https://www.dgs.pt/ficheiros-de-upload-3/pnv-vacinas-do-pnv-pdf.aspx</a>
+                    <br>
+                    <a class="links"
+                        href="https://www.dgs.pt/documentos-e-publicacoes/programa-nacional-de-vacinacao-2017-pdf.aspx">https://www.dgs.pt/documentos-e-publicacoes/programa-nacional-de-vacinacao-2017-pdf.aspx</a>
+                    <br>
+                    <a class="links"
+                        href="https://www.sns24.gov.pt/tema/doencas-infecciosas/sarampo/#sec-1">https://www.sns24.gov.pt/tema/doencas-infecciosas/sarampo/#sec-1</a>
+                    <br>
+                    <a class="links"
+                        href="https://www.sns24.gov.pt/tema/doencas-infecciosas/rubeola/">https://www.sns24.gov.pt/tema/doencas-infecciosas/rubeola/</a>
+                    <br>
+                    <a class="links"
+                        href="https://www.sns24.gov.pt/tema/doencas-infecciosas/papeira-ou-parotidite/">https://www.sns24.gov.pt/tema/doencas-infecciosas/papeira-ou-parotidite/</a>
+                </p>
+            </div>
+
+            <div id="meuc" class="w3-container topic w3-animate-opacity w3-mobile">
+                <h2>5. MenC</h2>
+                <br>
+                <h5>MenC - Vacina contra <i>Neisseria meningitidis C</i></h5>
+                <br>
+                <br>
+                <h6>O que é?</h6>
+                <p>Vacina de oligossacáridos ou polissacárido capsulares de Neisseria meningitidis do grupo C, conjugada
+                    com proteína tetânica ou diftérica.</p>
+                <br>
+                <h6>Para que serve?</h6>
+                <p>Previne a meningite bacteriana causada pela <i>Neisseria meningitidis C</i>.
+                </p>
+                <br>
+                <h6>O que é a meningite bacteriana?</h6>
+                <p>A meningite bacteriana é uma doença transmissível que provoca inflamação das membranas que protegem o
+                    cérebro e a medula espinhal (as meninges).
+                    <br>
+                    <br><u>Sintomas/Sinais:</u>
+                </p>
+                <ul>
+                    <li>Febre</li>
+                    <li>Dor de cabeça intensa</li>
+                    <li>Náuseas e vómitos</li>
+                    <li>Irritabilidade</li>
+                    <li>Confusão</li>
+                    <li>Cansaço extremo</li>
+                    <li>Agitação psicomotora</li>
+                    <li>Rigidez da nuca</li>
+                    <li>Alterações na pele</li>
+                </ul>
+                <p>Esta infeção transmite-se por contacto direto com gotículas e secreções - através da tosse, espirros,
+                    beijos e proximidade física. Uma pessoa infetada pode não mostrar sintomas até 10 dias depois de ter
+                    sido infetada. </p>
+                <br>
+                <h6>Quando deverá ser administrada? Para que grupos?</h6>
+                <p>É dada uma só dose aos 12 meses de idade. No entanto, pode ser dada até aos 5 anos e em pessoas de
+                    risco, com qualquer idade, no âmbito do PNV.
+                    <br> É importante vacinar pois a bactéria que provoca a meningite circula livremente na comunidade,
+                    nomeadamente em pessoas sem sintomas.
+                    <br>Sabemos que 91% a 99% das pessoas vacinadas ficam protegidas contra a meningite C.
+                </p>
+                <br>
+                <h6>Efeitos adversos?</h6>
+                <p>Esta vacina é muito segura, sendo que os efeitos adversos mais comuns são ligeiros e duram no máximo
+                    1 a 2 dias, como uma dor no local do braço onde levou a vacina, cansaço ligeiro ou dores de cabeça.
+                </p>
+                <br>
+                <h6>Imunidade de Grupo?</h6>
+                <p>Sim. Outra razão para vacinar contra a meningite C é para assegurar imunidade de grupo, para proteger
+                    quem não pode ser vacinado, bem como a baixa percentagem de pessoas que não responde à vacinação.
+                </p>
+                <br>
+                <p style="font-size: 11px;">
+                    Bibliografia:
+                    <br>
+                    <a class="links"
+                        href="https://www.sns24.gov.pt/tema/doencas-infecciosas/meningite-meningococica/">https://www.sns24.gov.pt/tema/doencas-infecciosas/meningite-meningococica/</a>
+                    <br>
+                    <a class="links"
+                        href="https://www.cdc.gov/vaccines/vpd/mening/public/index.html">https://www.cdc.gov/vaccines/vpd/mening/public/index.html</a>
+                    <br>
+                    <a class="links"
+                        href="https://www.dgs.pt/documentos-e-publicacoes/programa-nacional-de-vacinacao-2017-pdf.aspx">https://www.dgs.pt/documentos-e-publicacoes/programa-nacional-de-vacinacao-2017-pdf.aspx</a>
+                    <br>
+                </p>
+            </div>
+
+            <div id="pn13v" class="w3-container topic w3-animate-opacity w3-mobile">
+                <h2>6. Pn13</h2>
+                <br>
+                <h5>Pn13 - Vacina anti-Pneumocócica</h5>
+                <br>
+                <h6>O que é?</h6>
+                <p>Há mais de 80 tipos diferentes de Pneumococos, mas uns são mais comuns que outros.
+                    <br>A vacina Prevenar13 (PCV13) cobre 13 tipos - Vacina de polissacáridos capsulares de
+                    Streptococcus pneumoniae dos serotipos 1, 3, 4, 5, 6A, 6B, 7F, 9V, 14, 18C, 19A, 19F, 23F, conjugada
+                    com proteína diftérica. </p>
+                <br>
+                <h6>Para que serve?</h6>
+                <p>Serve para proteção contra a infeção por <i>Streptococcus Pneumoniae</i>.</p>
+                <br>
+                <h6>O que é a infecção por <i>Streptococcus Pneumoniae</i>?</h6>
+                <p>A Infeção por <i>Streptococcus Pneumoniae</i> habitualmente causa pneumonia, meningite, sinusite e
+                    otite (Infeção do ouvido médio, que são comuns nas crianças).
+                    <br>As infeções pneumocócicas geralmente causam febre e uma sensação de mal-estar geral. Para além
+                    disso causam outros sintomas de acordo com a parte do corpo afetada.
+                    <br> Significativa mortalidade e morbilidade mundialmente.
+                </p>
+                <br>
+                <h6>Pneumonia Pneumocócica</h6>
+                <p><u>Sintomas:</u></p>
+                <ul>
+                    <li>Febre</li>
+                    <li>Calafrios</li>
+                    <li>Sensação geral de mal-estar</li>
+                    <li>Falta de ar</li>
+                    <li>Tosse.</li>
+                </ul>
+                <br>
+                <h6>Meningite Pneumocócica </h6>
+                <p><u>Sintomas:</u></p>
+                <ul>
+                    <li>Febre</li>
+                    <li>Dor de cabeça</li>
+                    <li>Sensação geral de indisposição/mal-estar</li>
+                    <li>Rigidez no pescoço.</li>
+                </ul>
+                <br>
+                <h6>Otite</h6>
+                <p><u>Sintomas/Sinais:</u></p>
+                <ul>
+                    <li>Dor de ouvido</li>
+                    <li>Tímpano vermelho e abaulado ou pus atrás do tímpano</li>
+                </ul>
+                <br>
+                <h6>Quando deverá ser administrada? Para que grupos?</h6>
+                <p>A Prevenar13 é dada em 3 doses diferentes. Aos 2, 4 e 12 meses.
+                    <br> Para além da administração nestas idades há também um conjunto de indicações de grupos de risco
+                    a quem a vacina é também oferecida.</p>
+                <br>
+                <img src="./css/images/pn131.png" id="pn131" class="center" alt="pn131" height="500px" width="400px">
+                <br>
+                <h6>Efeitos adversos?</h6>
+                <p>A vacina é muito segura, apresentando efeitos adversos reduzidos e raros.
+                    <br> Efeitos adversos mais comuns são dor no local no braço onde foi administrada a vacina, cansaço
+                    ligeiro ou dores de cabeça.
+                </p>
+                <br>
+                <h6>Imunidade de Grupo?</h6>
+                <p>Sim. Uma das grandes vantagens da vacina é a imunidade de grupo conferida pela mesma. Desde que a
+                    vacina existe em Portugal foi notório o decréscimo na incidência das infeções por Pneumococos. Para
+                    esta imunidade de grupo é de salientar também a elevada percentagem de pessoas que faz a vacina,
+                    mesmo antes de esta pertencer ao PNV (antes de 2015).
+                </p>
+                <br>
+                <p style="font-size: 11px;">
+                    Bibliografia:
+                    <br>
+                    <a class="links"
+                        href="https://www.dgs.pt/ficheiros-de-upload-3/pnv-vacinas-do-pnv-pdf.aspx">https://www.dgs.pt/ficheiros-de-upload-3/pnv-vacinas-do-pnv-pdf.aspx</a>
+                    <br>
+                    <a class="links"
+                        href="https://www.dgs.pt/documentos-e-publicacoes/programa-nacional-de-vacinacao-2017-pdf.aspx">https://www.dgs.pt/documentos-e-publicacoes/programa-nacional-de-vacinacao-2017-pdf.aspx</a>
+                </p>
+            </div>
+
+            <div id="hpv" class="w3-container topic w3-animate-opacity w3-mobile">
+                <h2>7. HPV</h2>
+                <br>
+                <h5>HPV - Vacina contra infeções por vírus do Papiloma humano de 9 genótipos</h5>
+                <br>
+                <h6>O que é?</h6>
+                <p>Vacina recombinante de proteínas L1 do vírus do Papiloma humano dos genótipos 6, 11, 16, 18, 31, 33,
+                    45, 52, 58.</p>
+                <h6>Para que serve?</h6>
+                <p>A vacina contra o vírus do papiloma humano protege contra cerca de 9 genótipos (HPV9) tendo se
+                    mostrado uma medida bastante efetiva na prevenção de muitos dos cancros provocados por esta família
+                    de vírus.
+                    <br><br> O vírus do papiloma humano (HPV) é na verdade não 1 só vírus, mas um conjunto de mais de
+                    200
+                    vírus relacionados, sendo responsável por um elevado número de infeções que, na maioria das pessoas,
+                    não evolui para um quadro sintomático.
+                    <br><br> Por esse motivo, muitos tendem a descuidar-se no que toca a medidas de prevenção, tornando
+                    a
+                    infeção por HPV numa das infeções sexualmente transmissíveis mais comuns, à escala mundial.
+                    <br><br> Nos poucos casos em que estão presentes sintomas, estes caracterizam-se pelo
+                    <u>aparecimento de
+                        verrugas</u> que devido ao seu reduzido tamanho e localização acabam por também passar
+                    despercebidas.
+                    <br><br> Maioritariamente transmitido por via sexual.
+                    <br><br> Regra geral, este vírus tende a ser eliminado pelo nosso organismo, no entanto pode causar
+                    cancro, nomeadamente cancro do colo do útero.
+                    <br><br> Dada a elevada probabilidade de exposição ao mesmo, as medidas de prevenção – nomeadamente
+                    a
+                    vacinação, devem ser tomadas quanto antes. Daí a recomendação precoce na vacinação.
+                </p>
+                <img src="./css/images/hpv1.jpg" class="center" alt="hpv1" height="200px" width="300px">
+                <h6>Para que serve?</h6>
+                <p>A vacinação está dividida em 2 doses, sendo que a primeira se recomenda aos 10 anos de idade e a
+                    segunda passados 6 meses, até à data só administrada em raparigas.
+                    <br><br>No entanto, o Orçamento de Estado para 2019 definiu, em articulação com a Direção Geral de
+                    Saúde, a integração da vacina supramencionada também para os rapazes, no âmbito do PNV, a partir de
+                    outubro de 2020 (regulamentado pelo despacho nº12434/2019 do SEAS).
+                    <br><br>Se administrada depois dos 15 anos de idade a vacinação passar a requerer uma terceira dose.
+                    <br><br>Segundo o PNV, a idade máxima para iniciar esta vacinação é &lt;18 anos, uma vez que o risco
+                    de
+                    já ter sido exposto ao vírus a partir desta idade é acrescido.
+                </p>
+                <h6>Efeitos adversos?</h6>
+                <p>A vacina é considerada bastante segura, pelo que os únicos efeitos adversos que podem ocorrer versam
+                    sobre a dor, rubor e tumefação ligeira no local da injeção, febre, fadiga, cefaleias (dores de
+                    cabeça), náuseas, tonturas, artralgias (dores articulares) e mialgias (dores musculares).
+                </p>
+                <br>
+                <p style="font-size: 11px;">
+                    Bibliografia:
+                    <br>
+                    <a class="links"
+                        href="https://www.sns24.gov.pt/tema/doencas-infecciosas/virus-do-papiloma-humano-hpv/">https://www.sns24.gov.pt/tema/doencas-infecciosas/virus-do-papiloma-humano-hpv/</a>
+                    <br>
+                    <a class="links"
+                        href="https://www.cdc.gov/hpv/parents/vaccine-for-hpv.html">https://www.cdc.gov/hpv/parents/vaccine-for-hpv.html</a>
+                    <br>
+                    <a class="links"
+                        href="https://dre.pt/home/-/dre/127608823/details/maximized">https://dre.pt/home/-/dre/127608823/details/maximized</a>
+                    <br>
+                    <a class="links"
+                        href="https://www.cuf.pt/mais-saude/porque-e-importante-vacina-do-hpv">https://www.cuf.pt/mais-saude/porque-e-importante-vacina-do-hpv</a>
+                    <br>
+                </p>
+            </div>
+
+            <div id="novasVacinas" class="w3-container topic w3-mobile w3-animate-opacity w3-mobile">
+                <h2>8. Novas Vacinas</h2>
+                <br>
+                <h5>Vacina MenB - Vacina contra <i>Neisseria Meningitidis</i> Serogrupo B</h5>
+                <br>
+                <h6>O que é?</h6>
+                <p>Vacina de proteínas recombinantes de <i>Neisseria meningitidis</i> do serogrupo B.</p>
+                <br>
+                <h6>Para que serve?</h6>
+                <p>Protege as crianças da Meningite.</p>
+                <br>
+                <h6>O que é a meningite?</h6>
+                <p>Esta é uma doença caracterizada pela inflamação de meninges que são membranas que protegem o cérebro
+                    e medula espinhal.
+                    <br>Transmite-se através do contacto direto com gotículas e/ou secreções nasais, p.ex. espirros e
+                    contacto próximo.
+                    <br>
+                    <br><u>Sintomas:</u>
+                </p>
+                <ul>
+                    <li>Febre</li>
+                    <li>Dor de cabeça intensa</li>
+                    <li>Náuseas e vómitos</li>
+                    <li>Irritabilidade</li>
+                    <li>Confusão mental</li>
+                    <li>Cansaço extremo</li>
+                    <li>Rigidez da nuca</li>
+                    <li>Erupções da pele</li>
+                </ul>
+                <br>
+                <p>Possui uma alta taxa de letalidade (50%) e possibilidade de causar incapacidade se a criança não for
+                    vacinada em 10% dos casos. </p>
+                <br>
+                <h6>Quando deverá ser administrada? Para que grupos?</h6>
+                <p>2,4 e 12 meses de idade |Todas as Crianças.</p>
+                <br>
+                <h6>Efeitos adversos?</h6>
+                <p>Raros. Incluem sensibilidade e vermelhidão no local da injeção e febre.</p>
+                <br>
+                <img src="./css/images/novas-vacinas1.jfif" id="novas-vacinas1" class="center" alt="novas-vacinas1"
+                    height="250px" width="400px">
+                <br>
+                <div id="divPage"></div>
+                <br>
+                <h5>Vacina Rota - Vacina contra Rotavírus</h5>
+                <br>
+                <h6>O que é?</h6>
+                <p>Vacina oral de dupla dose que protege contra Rotavírus.</p>
+                <br>
+                <h6>Para que serve?</h6>
+                <p>Protege contra as gastroenterites agudas frequentes nos primeiros anos de vida causadas por
+                    Rotavírus.
+                </p>
+                <br>
+                <h6>O que é a gastroenterite aguda?</h6>
+                <p>A infeção por rotavírus é a causa mais comum de diarreias graves nos bebés e crianças pequenas.
+                    <br>A transmissão é feco-oral.
+                    <br><u>Sintomas:</u>
+                    <br>
+                </p>
+                <ul>
+                    <li>Vómitos</li>
+                    <li>Diarreia</li>
+                    <li>Febre</li>
+                    <li>Desidratação</li>
+                </ul>
+                <br>
+                <h6>Quando deverá ser administrada? Para que grupos?</h6>
+                <p>A vacina é administrada em duas doses. A primeira dose pode ser administrada a partir das 6 semanas
+                    de idade.
+                    <br> Um intervalo de pelo menos 4 semanas deve existir entre as doses. O esquema de vacinação deve
+                    preferencialmente ser administrado antes das 16 semanas de idade, mas deve estar completo pelas 24
+                    semanas de idade.
+                    <br>A vacina estará indicada para grupos de risco a ser definido pela DGS.
+                </p>
+                <br>
+                <h6>Efeitos adversos?</h6>
+                <p>Diarreia e irritabilidade.</p>
+                <br>
+                <div id="divPage" class="center"></div>
+                <br>
+                <h5>Vacina HPV para rapazes - vide <i>“HPV”</i></h5>
+                <h6>O que é?</h6>
+                <p>Vacina injetável recombinante de proteínas do vírus do Papiloma Humano.</p>
+                <br>
+                <h6>Para que serve?</h6>
+                <p>Prevenção de infecção por vírus do Papiloma Humano.
+                    <br> A transmissão ocorre por contacto sexual.
+                    <br>Uma infecção pelo HPV num rapaz não vacinado pode evoluir para uma lesão maligna denominada
+                    condiloma ano-genital.
+                </p>
+                <br>
+                <h6>O que é uma infecção por HPV?</h6>
+                <p>Uma infecção pelo HPV num rapaz não vacinado pode evoluir para uma lesão denominada condiloma
+                    ano-genital, que poderá evoluir para carcinoma do canal anal, da pele e de algumas mucosas.
+                    <br> A transmissão ocorre por contacto sexual.
+                    <br>(Mais informações em “HPV”)
+                </p>
+                <br>
+                <h6>Quando deverá ser administrada? Para que grupos?</h6>
+                <p>Todos os rapazes aos 10 anos.
+                    <br> Durante vários anos foi administrada apenas a raparigas, mas este ano foi alargada para
+                    rapazes.
+                </p>
+                <br>
+                <h6>Efeitos adversos?</h6>
+                <p>Inchaço, dor e vermelhidão na área da injeção e dores de cabeça, são os mais frequentes.</p>
+                <br>
+                <p style="font-size: 11px;">
+                    Bibliografia:
+                    <br>
+                    <a class="links"
+                        href="https://www.dgs.pt/em-destaque/pnv-2020-temos-um-novo-programa-nacional-de-vacinacao.aspx">https://www.dgs.pt/em-destaque/pnv-2020-temos-um-novo-programa-nacional-de-vacinacao.aspx</a>
+                    <br>
+                    <a class="links"
+                        href="https://www.dgs.pt/directrizes-da-dgs/normas-e-circulares-normativas/norma-n-0072016-de-09082016-pdf.aspx">https://www.dgs.pt/directrizes-da-dgs/normas-e-circulares-normativas/norma-n-0072016-de-09082016-pdf.aspx</a>
+                    <br>
+                    <a class="links"
+                        href="https://www.sns24.gov.pt/tema/doencas-infecciosas/meningite-meningococica/#sec-1">https://www.sns24.gov.pt/tema/doencas-infecciosas/meningite-meningococica/#sec-1</a>
+                    <br>
+                    <a class="links"
+                        href="https://www.msdmanuals.com/pt-pt/profissional/SearchResults?query=Infec%c3%a7%c3%a3o+por+rotav%c3%adrus&icd9=MM955%3b787.91">https://www.msdmanuals.com/pt-pt/profissional/SearchResults?query=Infec%c3%a7%c3%a3o+por+rotav%c3%adrus&icd9=MM955%3b787.91</a>
+                    <br>
+                    <a class="links"
+                        href="https://www.ema.europa.eu/en/documents/product-information/rotarix-epar-product-information_pt.pdf">https://www.ema.europa.eu/en/documents/product-information/rotarix-epar-product-information_pt.pdf</a>
+                    <br>
+                    <a class="links"
+                        href="https://www.sns24.gov.pt/tema/doencas-infecciosas/virus-do-papiloma-humano-hpv/">https://www.sns24.gov.pt/tema/doencas-infecciosas/virus-do-papiloma-humano-hpv/</a>
+                    <br>
+                </p>
+            </div>
+
+            <div id="bcg" class="w3-container topic w3-animate-opacity w3-mobile">
+                <h2>9. BCG</h2>
+                <br>
+                <h5>BCG - Vacina Contra a Tuberculose</h5>
+                <br>
+                <h6>O que é?</h6>
+                <p>Vacina de bacilos vivos atenuados de Mycobacterium bovis.</p>
+                <br>
+                <h6>Para que serve?</h6>
+                <p>Prevenção de formas graves de tuberculose na criança.</p>
+                <br>
+                <h6>O que é a tuberculose?</h6>
+                <p>A tuberculose é uma doença infeciosa transmitida por via inalatória, p.ex. tosse ou espirros. Pode
+                    atingir vários órgãos, nomeadamente os pulmões.
+                    <br>
+                    <br>
+                    <u>Sintomas:</u>
+                </p>
+                <ul>
+                    <li>Cansaço</li>
+                    <li>Tosse</li>
+                    <li>Expectoração</li>
+                    <li>Suores noturnos</li>
+                    <li>Falta de apetite</li>
+                </ul>
+                <br>
+                <h6>Quando deverá ser administrada?</h6>
+                <p>Até aos 6 anos | Apenas são vacinadas com a BCG as crianças que pertencem a grupos de risco para a
+                    tuberculose ou as que vivem numa determinada comunidade, com uma elevada incidência da doença. </p>
+                <br>
+                <h6>Efeitos adversos?</h6>
+                <p>Reações locais mais frequentes: nódulo vermelho que evolui para uma vesícula, seguida de uma úlcera,
+                    em 2 a 4 semanas. Esta reação desaparece em 2 a 5 meses, deixando uma cicatriz superficial com
+                    diâmetro de 2 a 10 mm. Podem ocorrer reações alérgicas tais como vermelhidão e inchaço.</p>
+                <br>
+                <p style="font-size: 11px;">
+                    Bibliografia:
+                    <br>
+                    <a class="links"
+                        href="https://www.dgs.pt/documentos-e-publicacoes/programa-nacional-de-vacinacao-2017-pdf.aspx">https://www.dgs.pt/documentos-e-publicacoes/programa-nacional-de-vacinacao-2017-pdf.aspx</a>
+
+                </p>
+
+            </div>
+
+            <div id="gripe" class="w3-container topic w3-animate-opacity w3-mobile">
+                <h2>10. Vacina contra o vírus da Gripe | Vacina contra o vírus da Hepatite A | Vacina Anti-varicela</h2>
+                <br>
+                <h5>Vacina contra o vírus da Gripe</h5>
+                <br>
+                <h6>O que é?</h6>
+                <p>Na época 2019/2020 estão disponíveis em Portugal, no SNS e nas farmácias comunitárias, duas vacinas
+                    tetravalentes inativadas: Influvac Tetra e Vaxigrip Tetra.</p>
+                <br>
+                <h6>Para que serve?</h6>
+                <p>É a principal arma de prevenção contra a gripe em pessoas vulneráveis, prevenindo esta doença e todas
+                    as complicações que lhe possam estar associadas.</p>
+                <br>
+                <h6>O que é a gripe?</h6>
+                <p>A gripe é uma doença aguda viral que afeta principalmente as vias respiratórias.
+                    <br>
+                    <br>Ocorre, habitualmente, entre novembro e março no hemisfério norte e entre abril e setembro no
+                    hemisfério sul. Em Portugal, nos anos recentes, tem-se verificado que a maior atividade gripal tem
+                    sido registada entre dezembro e fevereiro.
+                    <br>
+                    <br>O termo síndrome gripal é utilizado para referir o conjunto de sinais e sintomas que permitem
+                    caracterizar as manifestações do vírus da gripe no corpo humano.
+                    <br>
+                    <br>O vírus da gripe é transmitido através de partículas de saliva de uma pessoa infetada, através
+                    da tosse e dos espirros, mas também por contacto direto com partes do corpo ou superfícies
+                    contaminadas com o vírus, por exemplo através das mãos.
+                    <br>
+                    <br>O período de incubação, isto é, o período entre o momento em que a pessoa é infetada e o
+                    aparecimento dos primeiros sintomas, é vulgarmente, de 2 dias, mas pode variar entre 1 e 5 dias.
+                    <br>
+                    <br>Nos adultos os sintomas são:
+                </p>
+                <ul>
+                    <li>Mal-estar e cansaço</li>
+                    <li>Febre alta</li>
+                    <li>Dores musculares e articulares</li>
+                    <li>Dores de cabeça</li>
+                    <li>Tosse seca</li>
+                    <li>Inflamação dos olhos</li>
+                </ul>
+                <br>
+                <p>Em crianças mais velhas os sintomas são semelhantes aos do adulto.
+                    <br>
+                    <br>Nos bebés os sintomas da gripe são:</p>
+                <ul>
+                    <li>Febre</li>
+                    <li>Sonolência</li>
+                    <li>Náuseas</li>
+                    <li>Vómitos</li>
+                    <li>Diarreia</li>
+                    <li>Dificuldades respiratórias</li>
+                    <li>Otites</li>
+                </ul>
+                <br>
+                <p>Nas crianças os sintomas dependem da idade.Geralmente a gripe não é uma doença muito grave. Contudo,
+                    pode provocar complicações.
+                    <br>
+                    <br> A gripe é habitualmente uma doença de curta duração (3 a 4 dias), com sintomas de intensidade
+                    ligeira ou moderada e evolução benigna, sendo que a recuperação completa demora cerca de 1 a 2
+                    semanas.
+                    <br>
+                    <br> Nos grupos de risco – pessoas com doenças crónicas e idosos – a recuperação pode ser mais longa
+                    e o risco de problemas e complicações é maior, nomeadamente, pneumonia ou descompensação da doença
+                    de base (asma, diabetes, doença cardíaca, pulmonar ou renal).
+                </p>
+                <br>
+                <h6>Quando deverá ser administrada? Para que grupos?</h6>
+                <p>Segundo a DGS, a vacinação contra a gripe está fortemente recomendada para (sendo gratuita em 2020):
+                </p>
+                <ul>
+                    <li>Pessoas com idade igual ou superior a 65 anos (também está recomendada a partir dos 60 em alguns
+                        grupos)
+                    </li>
+                    <li>Doentes crónicos e imunodeprimidos (a partir dos seis meses de idade)</li>
+                    <li>Portadores de trissomia 21</li>
+                    <li>Grávidas</li>
+                    <li>Profissionais de saúde e outros prestadores de cuidados (por exemplo, em lares de idosos)</li>
+                </ul>
+                <br>
+                <p>A vacina contra a gripe é também gratuita (em 2020) para:</p>
+                <ul>
+                    <li>Bombeiros com atividade assistencial</li>
+                    <li>Residentes em instituições ou pessoas internadas em unidades do SNS</li>
+                    <li>Guardas prisionais e reclusos</li>
+                </ul>
+                <p>O período de vacinação é iniciado em outubro e todos os grupos de risco devem estar vacinados até ao
+                    final do ano, idealmente.
+                    <br>
+                    <br>A vacinação anual é necessária, as pessoas devem ser vacinadas todos os anos contra a gripe.
+                    Isto acontece porque os vírus da gripe estão em constante mudança, o que faz com que a imunidade que
+                    a vacina nos oferece num ano não seja duradoura ou válida no ano seguinte
+                </p>
+                <br>
+                <h6>Como obter?</h6>
+                <p>A vacina está habitualmente disponível, gratuitamente, nos centros de saúde para alguns dos grupos de
+                    risco. Pode também ser adquirida nas farmácias, mediante receita médica, beneficiando de
+                    comparticipação a 37%.
+                    <br>Nos centros de saúde, a vacina da gripe é administrada sem qualquer custo nos seguintes casos:
+                </p>
+                <ul>
+                    <li>Idade igual ou superior a 65 anos</li>
+                    <li>Residentes ou internados em instituições</li>
+                    <li>Pessoas com doenças crónicas dos pulmões, do coração, dos rins ou do fígado</li>
+                    <li>Diabéticos</li>
+                    <li>Grávidas</li>
+                    <li>Portadores de doenças que diminuam a resistência a infecções (imunodeprimidos, a partir dos 6
+                        meses de idade)</li>
+                    <li>Profissionais de saúde e outros prestadores de cuidados (por exemplo, em lares de idosos)</li>
+                </ul>
+                <p>
+                    Informe-se junto do seu médico ou enfermeiro se deve ser vacinado e onde pode ser administrada a
+                    vacina.
+                </p>
+                <br>
+                <h6>Efeitos Adversos:</h6>
+                <p>Existe a ideia errada de que podemos "apanhar" gripe através da vacina. A vacina contra a gripe não
+                    contém vírus vivos, pelo que não pode provocar a doença.
+                    <br> O que pode acontecer é o desenvolvimento de alguns efeitos que "imitam" os sintomas da gripe ou
+                    constipação:
+                </p>
+                <ul>
+                    <li>Inchaço ou dor na zona onde foi administrada a vacina</li>
+                    <li>Náuseas</li>
+                    <li>Febre ligeira</li>
+                </ul>
+                <p>Fale com o seu médico assistente antes de ser vacinado contra a gripe se é:</p>
+                <ul>
+                    <li>Alérgico a ovos: a maior parte dos tipos de vacina da gripe contém uma pequena quantidade de
+                        proteína do ovo.</li>
+                    <li>Já teve uma reação alérgica grave à vacina da gripe: nestes casos, a vacinação não é
+                        recomendada.
+                    </li>
+                </ul>
+                <br>
+                <h6>A vacina é eficaz? Posso ter gripe mesmo tomando a vacina?</h6>
+                <p>Sim. A vacina diminui muito o risco de contrair a infeção.
+                    <br>
+                    <br>É possível mesmo após a vacinação ter gripe, dependendo de fatores como a idade ou o estado de
+                    saúde geral e sobretudo se os vírus presentes na vacina desse ano não coincidam completamente com os
+                    vírus dessa época de gripe.
+                    <br>
+                    <br>No entanto, mesmo que tenha gripe, a pessoa vacinada terá um menor risco de ter complicações,
+                    não devendo a doença ser tão grave como seria se não tivesse sido vacinado.</p>
+                <br>
+                <div id="divPage"></div>
+                <br>
+                <h5>HepA - Vacina contra o vírus da Hepatite A</h5>
+                <br>
+                <br>
+                <h6>O que é?</h6>
+                <p>Vacina (adsorvida) contra a hepatite A (inativada) - Adultos.
+                    <br>Vacina contra a hepatite A, inativada e adsorvida - Crianças e adolescentes
+                </p>
+                <br>
+                <h6>Para que serve?</h6>
+                <p>Proteção contra o vírus da Hepatite A.
+                    <br>
+                    <br>A hepatite A é uma infeção cujo principal modo de transmissão é por via fecal-oral, através da
+                    ingestão de alimentos ou água contaminados com fezes, sobretudo em viajantes, ou por contacto
+                    próximo com pessoas infetadas.
+                    <br>
+                    <br>O vírus da hepatite A é eliminado nas fezes, em elevadas concentrações, desde 2 a 3 semanas
+                    antes até uma semana após o aparecimento dos sintomas.
+                    <br>
+                    <br>Sintomas:
+                </p>
+                <ul>
+                    <li>Febre</li>
+                    <li>Mal-estar</li>
+                    <li>Náuseas</li>
+                    <li>Vómitos</li>
+                    <li>Dor abdominal</li>
+                    <li>Falta de apetite</li>
+                    <li>Urina escura</li>
+                    <li>Icterícia (coloração amarelada da pele e dos olhos)</li>
+                </ul>
+                <br>
+                <p>A frequência de sintomas depende, em regra, da idade do doente. A infeção só é sintomática em 30% dos
+                    casos com idade inferior a 6 anos. Em crianças mais velhas e adultos, a infeção provoca, geralmente,
+                    doença clínica em mais de 70% dos casos.</p>
+                <br>
+                <h6>Quando deverá ser administrada? Para que grupos?</h6>
+                <ol type="A">
+                    <li>Em contexto de pós-exposição:</li>
+                    <ol type="i">
+                        <li>Contactos de pessoas com hepatite A, até 2 semanas após a última exposição.</li>
+                    </ol>
+                    <li>Em contexto de pré-exposição:</li>
+                    <ol type="i">
+                        <li>Homens que praticam sexo anal ou oro-anal com outros homens;</li>
+                        <li>Os viajantes com destino a países endémicos para hepatite A.</li>
+                    </ol>
+                    <li>No âmbito do Programa Nacional de Vacinação:</li>
+                    <ol type="i">
+                        <li>Candidatos a transplante hepático;</li>
+                        <li>Crianças sob terapêutica com fatores de coagulação derivados do plasma.</li>
+                    </ol>
+                </ol>
+                <p>A vacinação contra a hepatite A é eficaz na prevenção da infeção em mais de 85% dos casos, quando
+                    administrada até 2 semanas após a exposição.</p>
+                <br>
+                <h6>Efeitos adversos?</h6>
+                <p>Os efeitos secundários são raros e, caso se façam sentir, são ligeiros e prendem-se com a própria
+                    toma, ou seja: dor, vermelhidão e inchaço no local da picada. Em alguns casos, verificam-se sintomas
+                    semelhantes aos da gripe (febre, dor de cabeça, arrepios, dores nos músculos e articulações) mas,
+                    normalmente, duram um dia. Mais raros ainda, são os casos em que se origina diarreia ou urticária.
+                </p>
+                <br>
+                <p style="font-size: 11px;">
+                    Bibliografia:
+                    <br>
+                    <a class="links"
+                        href="https://www.cuf.pt/mais-saude/vacina-da-gripe">https://www.cuf.pt/mais-saude/vacina-da-gripe</a>
+                    <br>
+                    <a class="links"
+                        href="https://www.sns24.gov.pt/tema/doencas-infecciosas/gripe/vacinacao-contra-a-gripe/">https://www.sns24.gov.pt/tema/doencas-infecciosas/gripe/vacinacao-contra-a-gripe</a>
+                    <br>
+                    <a class="links"
+                        href="https://www.dgs.pt/directrizes-da-dgs/normas-e-circulares-normativas/norma-n-0192018-de-12122018-pdf.aspx">https://www.dgs.pt/directrizes-da-dgs/normas-e-circulares-normativas/norma-n-0192018-de-12122018-pdf.aspx</a>
+                    <br>
+                    <a class="links"
+                        href="https://www.dgs.pt/saude-publica1/hepatite-a.aspx">https://www.dgs.pt/saude-publica1/hepatite-a.aspx</a>
+                    <br>
+                    <a class="links"
+                        href="https://www.sns24.gov.pt/tema/doencas-infecciosas/virus-da-hepatite-a-vha/">https://www.sns24.gov.pt/tema/doencas-infecciosas/virus-da-hepatite-a-vha/</a>
+                    <br>
+                    <a class="links"
+                        href="http://app7.infarmed.pt/infomed/download_ficheiro.php?med_id=9004&tipo_doc=fi">http://app7.infarmed.pt/infomed/download_ficheiro.php?med_id=9004&tipo_doc=fi</a>
+                    <br>
+                    <a class="links"
+                        href="http://app7.infarmed.pt/infomed/download_ficheiro.php?med_id=4140&tipo_doc=fi">http://app7.infarmed.pt/infomed/download_ficheiro.php?med_id=4140&tipo_doc=fi</a>
+                </p>
+                <br>
+                <div id="divPage"></div>
+                <br>
+                <h5>Vacina Anti-varicela</h5>
+                <br>
+                <br>
+                <h6>O que é?</h6>
+                <p>A vacina contra a varicela é composta pelo VVZ vivo atenuado (estirpe Oka). Em Portugal está
+                    disponível sob a forma monovalente (apenas varicela).</p>
+                <br>
+                <h6>Para que serve?</h6>
+                <p>Proteção contra o vírus varicela-zoster.</p>
+                <br>
+                <h6>O que é a varicela?</h6>
+                <p>A varicela é uma das doenças transmissíveis mais comuns na infância, sendo bastante contagiosa.
+                    <br>É caracterizada por bolhas ou borbulhas que provocam comichão intensa, podendo afetar toda a
+                    pele.
+                    <br>É uma doença infecciosa causada pelo vírus varicela zoster, do grupo Herpesvirus.
+                    <br>
+                    <br>Sintomas:
+                </p>
+                <ul>
+                    <li>Febre ligeira (por vezes grave no adulto)</li>
+                    <li>Dor de cabeça</li>
+                    <li>Mal-estar</li>
+                    <li>Falta de apetite</li>
+                    <li>Erupção da pele</li>
+                    <li>falta de apetite</li>
+                </ul>
+                <p>Surgem pequenas manchas vermelhas (máculas) que evoluem para lesões sólidas da pele, em horas,
+                    seguindo-se, durante 3-4 dias, a formação de vesículas (pequenas bolhas) que progridem para a
+                    formação de crostas. Estas lesões da pele caracterizam-se também pela comichão que causam.
+                    <br> A erupção da pele inicia-se no tronco, passando para extremidades como couro cabeludo, axilas,
+                    boca, face, trato respiratório ou para áreas com irritação cutânea.
+                    <br>
+                    <br>A varicela transmite-se de pessoa para pessoa:
+                </p>
+                <ul>
+                    <li>Por contacto direto, quando alguém toca nas borbulhas ou em objetos contaminados</li>
+                    <li>Por gotículas de saliva existentes no ar da pessoa com varicela, quando espirra, tosse ou fala
+                    </li>
+                </ul>
+                <p>Os adolescentes, os adultos e os imunocomprometidos são mais suscetíveis a complicações graves.</p>
+                <br>
+                <h6>Quando deverá ser administrada? Para que grupos?</h6>
+                <p>Em Portugal a vacina da varicela não está incluída no Programa Nacional de Vacinação, mas está
+                    autorizada pelo Infarmed e disponível para prescrição médica.
+                    <br> A vacina da varicela é recomendada em adolescentes e adultos suscetíveis.
+                    <br>
+                    <br>Os grupos de risco incluem:
+                </p>
+                <ul>
+                    <li>Mulheres não imunes antes da gravidez</li>
+                    <li>Pais de crianças jovens, não imunizados</li>
+                    <li>Adultos ou crianças que contactam habitualmente com doentes imunodeprimidos</li>
+                    <li>Indivíduos não imunes em ocupações de alto risco (trabalhadores de creches e infantários,
+                        professores, profissionais de saúde)</li>
+                </ul>
+                <br>
+                <h6>Efeitos adversos?</h6>
+                <p>No mês seguinte à imunização, até 10 % dos adultos e 5% das crianças desenvolvem uma erupção cutânea
+                    associada à vacina, localizada à área da injeção ou generalizada.
+                    <br>A vacina não deve ser administrada a imunodeprimidos, grávidas, menores de 1 ano de idade e
+                    hipersensibilidade a algum dos componentes da vacina e terapêutica concomitante com salicilatos.
+                </p>
+                <p style="font-size: 11px;">
+                    Bibliografia:
+                    <br>
+                    <a class="links"
+                        href="https://www.sns24.gov.pt/tema/doencas-infecciosas/varicela/">https://www.sns24.gov.pt/tema/doencas-infecciosas/varicela/</a>
+                    <br>
+                    <a class="links"
+                        href="https://www.spp.pt/UserFiles/file/Comissao_de_Vacinas/Recomendacoes%20sobre%20vacinas%20extra%20PNV%202015-2016.pdf">https://www.spp.pt/UserFiles/file/Comissao_de_Vacinas/Recomendacoes%20sobre%20vacinas%20extra%20PNV%202015-2016.pdf</a>
+                </p>
+            </div>
+
+
+
+            <br><br>
+
+            <div id="navButtons" class="w3-bar w3-container w3-animate-opacity w3-mobile">
+                <button id="previousButton" class="w3-btn small w3-border w3-round w3-left w3-small w3-hover-none"
+                    onclick="changeTopic(event, 'previous')" style="display: none; font-size: 12px;">❮ Anterior</button>
+                <button id="nextButton" class="w3-btn small w3-border w3-round w3-right w3-small w3-hover-none"
+                    onclick="changeTopic(event, 'next')" style="display: block; font-size: 12px;">Seguinte ❯</button>
+            </div>
+
+            <div id="footer" class="w3-container w3-mobile w3-animate-opacity w3-mobile">
+                <p class="p-footer">
+                    <br>
+                    <a href="https://www.youtube.com/channel/UCTha6QJOgFTuTADTl4Fzwpw"
+                        class="fa fa-youtube w3-right"></a>
+                    <a href="https://www.facebook.com/ANEM.Portugal/" class="fa fa-facebook w3-right"></a>
+                    <a href="https://twitter.com/anemmedicina" class="fa fa-twitter w3-right"></a>
+                    <a href="https://www.instagram.com/anemmedicina/" class="fa fa-instagram w3-right"></a>
+                    <img src="./css/images/logo-anem.png" alt="ANEM logo" height="45" width="100">
+                    <p id="info" style="font-size: 10px; float: left;"></p>
+                </p>
+
+
+            </div>
+        </div>
+
+
+</body>
+
+<script src="./js/script.js"></script>
+
+</html>
